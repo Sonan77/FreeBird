@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DJ참새찡</title>
+
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+
+            display: block;
+            object-fit: contain;
+            align-content: center;
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+    </style>
+
+
+    <audio id='audio_play' src="Glen Check_Acid Test.mp3"></audio>
+    <script type="text/javascript">
+        function play() {
+            var audio = document.getElementById('audio_play');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <img src="DJ참새찡.png" onclick="play()">
+
+
+</body>
+
+
+
+
+</html>
