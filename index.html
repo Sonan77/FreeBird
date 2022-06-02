@@ -12,13 +12,29 @@
             align-content: center;
         }
     </style>
+
+
+    <audio id='audio_play' src="멧비둘기 울음소리.mp3"></audio>
+    <script type="text/javascript">
+        function play() {
+            var audio = document.getElementById('audio_play');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+
+
 </head>
 
 
 
 <body>
 
-    <A href="멧비둘기.html" target="_self"> <img src="멧비둘기.png"> </A>
+
     <img src="멧비둘기.png">
     <img src="멧비둘기.png">
     <img src="멧비둘기.png">
@@ -28,6 +44,7 @@
     <img src="멧비둘기.png">
     <img src="멧비둘기.png">
     <img src="멧비둘기.png">
+    <img src="입이 근질근질한 멧비둘기.png" onclick="play()">
     <img src="멧비둘기.png">
     <img src="멧비둘기.png">
     <A href="참새찡.html" target="_self"> <img src="참새찡.png"> </A>
